@@ -39,7 +39,10 @@ namespace WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
